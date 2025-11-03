@@ -1,27 +1,66 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Welcome Home, Ut 💙</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container fade-in">
-    <img src="DHARMA.jpg" alt="Ut" class="hero-image" />
-    <h1>Welcome Home, Ut 💙</h1>
-    <p class="subtitle">ul baanggaa bangett sama ut!</p>
+  <main class="wrap">
+    <header class="top-card">
+      <img src="DHARMA2.jpg" alt="Ut hero" class="hero" />
+      <div class="hero-text">
+        <h1>Welcome Home, Ut 💙</h1>
+        <p class="subtitle">ul baanggaa bangett sama ut!</p>
+        <div class="hero-controls">
+          <button id="playSong" class="btn primary">🎵 Sing Songg</button>
+          <a class="btn ghost" href="DHARMA2.jpg" target="_blank" rel="noopener">⚽ Lihat Foto Ut</a>
+          <a class="btn ghost" href="pesan.html">💌 Pesan dari Ul</a>
+        </div>
+      </div>
+    </header>
 
-    <div class="links">
-      <a href="https://youtu.be/dicVOnyByXs?si=-Y5Pm7tv9bLgSQ2Y&t=49" target="_blank" class="btn">🎵 Sing Songg</a>
-      <a href="DHARMA.jpg" target="_blank" class="btn">⚽ Pemain Bola Andalankuu</a>
-      <a href="pesan.html" class="btn">💌 Pesan dari Ul</a>
+    <!-- Embedded YouTube iframe hidden by default; will be shown when Play clicked -->
+    <div id="playerWrap" class="player-wrap hidden" aria-hidden="true">
+      <div class="player-inner">
+        <button id="closePlayer" class="close">✕</button>
+        <!-- start=49 end=73 -->
+        <iframe id="yt" width="560" height="315"
+          src="https://www.youtube.com/embed/dicVOnyByXs?start=49&end=73&rel=0&enablejsapi=1"
+          frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
     </div>
-  </div>
 
-  <footer>
-    <p>Made with 💙 by Ul</p>
-  </footer>
+    <!-- Gallery section -->
+    <section class="gallery-section">
+      <h2>Pemain Bola Andalankuu</h2>
+      <div class="gallery-controls">
+        <label class="toggle">
+          <input type="checkbox" id="slideshowToggle" />
+          <span>Slideshow Otomatis</span>
+        </label>
+        <small class="note">Hover foto untuk zoom • drag/scroll untuk lihat semua</small>
+      </div>
+
+      <div class="gallery" id="gallery">
+        <!-- List of images -->
+        <div class="g-item"><img src="DHARMA2.jpg" alt="Ut 1"></div>
+        <div class="g-item"><img src="DHARMA4.jpg" alt="Ut 2"></div>
+        <div class="g-item"><img src="DHARMA5.jpg" alt="Ut 3"></div>
+        <div class="g-item"><img src="DHARMA6.jpg" alt="Ut 4"></div>
+        <div class="g-item"><img src="DHARMA7.jpg" alt="Ut 5"></div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <a class="btn primary" href="pesan.html">💌 Baca Pesan Penuh dari Ul</a>
+    </section>
+
+    <footer class="footer">
+      <p>Made with 💙 by Ul</p>
+    </footer>
+  </main>
 
   <script src="script.js"></script>
 </body>
