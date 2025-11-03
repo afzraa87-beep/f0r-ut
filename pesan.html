@@ -1,31 +1,233 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dari Ul untuk Ut 💌</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dari Ul untuk Ut 💙</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Pacifico&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(180deg, #eaf6ff, #ffffff);
+      color: #1e293b;
+      text-align: center;
+      overflow-x: hidden;
+      position: relative;
+      height: 100%;
+    }
+
+    /* 🌈 Bubbles animation */
+    .bubbles {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .bubbles span {
+      position: absolute;
+      bottom: -150px;
+      width: 20px;
+      height: 20px;
+      background: rgba(58, 160, 255, 0.25);
+      border-radius: 50%;
+      animation: rise 10s infinite ease-in;
+    }
+
+    @keyframes rise {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 0.8;
+      }
+      100% {
+        transform: translateY(-100vh) scale(0.5);
+        opacity: 0;
+      }
+    }
+
+    header {
+      padding: 40px 20px 10px;
+      position: relative;
+      z-index: 2;
+    }
+
+    h1 {
+      font-family: 'Pacifico', cursive;
+      color: #3aa0ff;
+      font-size: 2.3rem;
+      margin-bottom: 0.4em;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin: 0 auto 1.5em;
+      width: 90%;
+      max-width: 600px;
+      color: #334155;
+      position: relative;
+      z-index: 2;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin: 40px 0;
+      padding: 0 10px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .gallery img {
+      width: 250px;
+      height: 310px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      animation: fadeIn 1.2s ease both;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(58, 160, 255, 0.3);
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    .message {
+      background: white;
+      border-radius: 20px;
+      padding: 30px;
+      margin: 20px auto 40px;
+      width: 90%;
+      max-width: 650px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+      animation: fadeIn 1.5s ease both;
+      position: relative;
+      z-index: 2;
+    }
+
+    .message h2 {
+      font-family: 'Pacifico', cursive;
+      color: #3aa0ff;
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 24px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+      z-index: 2;
+      position: relative;
+    }
+
+    .btn.primary {
+      background: #3aa0ff;
+      color: white;
+    }
+
+    .btn.primary:hover {
+      background: #1e8fff;
+      box-shadow: 0 0 15px rgba(58,160,255,0.4);
+    }
+
+    footer {
+      font-size: 0.9rem;
+      color: #64748b;
+      margin-bottom: 30px;
+      z-index: 2;
+      position: relative;
+    }
+
+    .question-section {
+      background: linear-gradient(180deg,#f7fbff,#ffffff);
+      border-radius: 14px;
+      margin: 30px auto;
+      padding: 25px 20px;
+      width: 90%;
+      max-width: 600px;
+      animation: fadeIn 2s ease both;
+      position: relative;
+      z-index: 2;
+    }
+
+    iframe {
+      display: none;
+    }
+  </style>
 </head>
 <body>
-  <div class="container fade-in">
-    <h1>💌 Dari Ul untuk Ut 💙</h1>
-    <p style="text-align: left; margin-top: 20px; line-height: 1.7;">
-      Welcome homee, uut!<br><br>
-      Akhirnya yang ditunggu-tunggu pulang juga. ul mau bilangg, lek ul baanggaa bangett ngett sama ut. Serius. 
-      Ngeliat ut berjuang di lapangan, dan jadi salah satu perwakilan Jawa Timur di POPNAS taun ini tuuu 
-      bener-bener bikin ul kekk... speechless kerennya.<br><br>
 
-      Perjuangan dan seemuuaa kerja keras utt di sana itu luarrr biasaa, Allahu Akbar Yess. Nggak cuma aku, 
-      tapi kita semua (keluargane ut, mas reza, bundaa, dan teman temann) yang sayang sama ut di sini ikut 
-      baaangga banget punya ut.<br><br>
+  <!-- 🎵 Musik Latar -->
+  <iframe width="0" height="0" 
+    src="https://www.youtube.com/embed/dicVOnyByXs?start=49&end=73&autoplay=1&loop=1&playlist=dicVOnyByXs"
+    allow="autoplay">
+  </iframe>
 
-      Ut ki hebaattt banget bisa sampe di titik ini, bawa nama Jawa Timur di POPNAS. KWEREENN KAKKK 💪<br><br>
-
-      Sekarang, waktunya kamu istirahat. Charge energi lagi. Selamat pulang ya, atlet kebanggaan akuu, 
-      Pemain Bola Andalan kuu. Selamatt beristirahattt. ggak usah mikir apa-apa dulu, enjoy waktu istirahatnya.<br><br>
-    </p>
-
-    <a href="index.html" class="btn">⬅️ Kembali</a>
+  <!-- 💭 Background bubbles -->
+  <div class="bubbles">
+    <span style="left:10%; width:20px; height:20px; animation-duration:11s;"></span>
+    <span style="left:30%; width:25px; height:25px; animation-duration:10s; animation-delay:2s;"></span>
+    <span style="left:50%; width:15px; height:15px; animation-duration:12s; animation-delay:4s;"></span>
+    <span style="left:70%; width:30px; height:30px; animation-duration:13s; animation-delay:1s;"></span>
+    <span style="left:90%; width:18px; height:18px; animation-duration:9s; animation-delay:3s;"></span>
   </div>
+
+  <header>
+    <h1>Welcome Home, Ut 💙</h1>
+    <p>Akhirnya yang ditunggu-tunggu pulang juga.  
+    Ul bangga banget sama Ut. Serius.  
+    Ngeliat Ut berjuang di lapangan, jadi perwakilan Jawa Timur di POPNAS,  
+    bener-bener bikin Ul speechless. Kamu keren banget.</p>
+  </header>
+
+  <section class="gallery">
+    <img src="DHARMA.jpg" alt="Ut 1">
+    <img src="DHARMA2.jpg" alt="Ut 2">
+    <img src="DHARMA4.jpg" alt="Ut 3">
+    <img src="DHARMA5.jpg" alt="Ut 4">
+    <img src="DHARMA6.jpg" alt="Ut 5">
+    <img src="DHARMA7.jpg" alt="Ut 6">
+  </section>
+
+  <div class="message">
+    <h2>Pemain Bola Andalanku ⚽</h2>
+    <p>Perjuangan dan kerja keras Ut di sana itu luar biasa.  
+      Nggak cuma Ul, tapi semua yang sayang sama Ut ikut bangga banget.  
+      Sekarang waktunya istirahat dulu, recharge energi.  
+      Selamat pulang ya, atlet kebanggaan Ul 💙</p>
+  </div>
+
+  <section class="question-section">
+    <h2 style="font-family:'Pacifico',cursive; color:#3aa0ff;">Gimana hari ini, Ut?</h2>
+    <p style="color:#334155; font-size:1rem; margin-bottom:16px;">
+      Ceritain sedikit dong ke Ul, mau dengerrr~ 💬
+    </p>
+    <a href="https://wa.me/62XXXXXXXXXX?text=Hai%20Ul!%20Hari%20ini%20aku%20..."
+       class="btn primary" target="_blank" rel="noopener">
+      💌 Chat ke Ul Sekarang
+    </a>
+  </section>
+
+  <footer>
+    Dari Ul untuk Ut 🌷 | 💙
+  </footer>
+
 </body>
 </html>
